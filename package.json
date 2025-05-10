@@ -2,15 +2,15 @@
   "name": "anix-docs",
   "homepage": "https://sidddev15.github.io/anixdocs/",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.7",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build", 
-    "deploy": "gh-pages -d dist"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@siddsr/anix": "^1.0.4",
