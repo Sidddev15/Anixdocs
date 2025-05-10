@@ -1,0 +1,99 @@
+.documentation-container {
+    max-width: 880px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    font-family: var(--primary-font);
+    color: var(--text-color);
+    line-height: 1.8;
+  }
+  
+  .documentation-container h4 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    background: var(--anix-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: var(--secondary-font);
+    font-weight: 6500;
+  }
+  
+  .documentation-container h5 {
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.5rem;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 500;
+  }
+  
+  .documentation-container h6.caption {
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: -0.5rem;
+    font-style: italic;
+    font-weight: 500;
+  }
+  
+  .documentation-container p {
+    font-size: 1rem;
+    margin: 0.5rem 0 1rem;
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    column-gap: 0.3rem;
+  }
+
+  .documentation-container p code {
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+  }
+  
+  .documentation-container ul {
+    padding-left: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .documentation-container ul li {
+    margin: 0.4rem 0;
+    list-style-type: disc;
+    font-size: 1.1rem;
+  }
+
+  .documentation-container code {
+    font-family: var(--secondary-font);
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  
+  .border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 2rem 0;
+  }
+  
+  pre {
+    background-color: var(--code-bg);
+    padding: 1rem;
+    border: 1px solid var(--code-border);
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+  }
+  
+  code {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #f0f0f0;
+    display: block;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+  
+  a {
+    color: rgba(255, 110, 196, 1);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }

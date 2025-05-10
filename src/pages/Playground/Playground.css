@@ -1,0 +1,310 @@
+.playground-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Segoe UI', sans-serif;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.playground-container h3 {
+    font-family: var(--primary-font);
+    font-size: 10rem;
+    margin: 0;
+    cursor: pointer;
+    line-height: 8rem;
+    text-align: center;
+    transition: all 0.6s ease-in-out;
+    filter: drop-shadow(0 0 0 transparent);
+    transition: all 0.3s ease-in-out;
+}
+
+.playground-container h3::selection {
+    background-color: transparent;
+}
+
+.playground-container h3:hover {
+    filter: drop-shadow(0 0 10px rgba(255, 110, 196, 0.7)) drop-shadow(0 0 20px rgba(120, 115, 245, 0.5));
+}
+
+.playground-container h6 {
+    margin: 0;
+    margin-top: 5rem;
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.playground-container p {
+    margin: 0;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 60rem;
+}
+
+.cta-button-playground {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    height: 2.5rem;
+    display: flex;
+    margin-top: 7rem;
+    justify-content: center;
+    align-items: center;
+    width: 9.6rem;
+    border-radius: 0.6rem;
+    border: 0.063rem solid #ffffff;
+    color: #fafafa;
+    background: transparent;
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    z-index: 1;
+}
+
+.cta-button-playground a {
+    color: #fafafa;
+    text-decoration: none;
+    line-height: 2.5rem;
+}
+
+.cta-button-playground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, rgba(255, 110, 196, 1), rgba(120, 115, 245, 1));
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 0.6s ease;
+}
+
+.cta-button-playground:hover::before {
+    opacity: 1;
+}
+
+/* Glitch Effect */
+.glitch {
+    animation: glitch 0.4s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translate(-2px, 2px);
+    }
+
+    40% {
+        transform: translate(-2px, -2px);
+    }
+
+    60% {
+        transform: translate(2px, 2px);
+    }
+
+    80% {
+        transform: translate(2px, -2px);
+    }
+
+    100% {
+        transform: translate(0);
+    }
+}
+
+/* Bounce Effect */
+.bounce {
+    animation: bounce 0.8s ease;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+/* Fade Effect */
+.fade {
+    animation: fade 1.2s ease-in-out;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Skew Effect */
+.skew {
+    animation: skew 0.6s ease-in-out;
+}
+
+@keyframes skew {
+    0% {
+        transform: skewX(0deg);
+    }
+
+    50% {
+        transform: skewX(25deg);
+    }
+
+    100% {
+        transform: skewX(0deg);
+    }
+}
+
+/* Blur Pop Effect */
+.blur-pop {
+    animation: blurPop 0.7s ease-in-out;
+}
+
+@keyframes blurPop {
+    0% {
+        filter: blur(4px);
+        opacity: 0;
+        transform: scale(0.8);
+    }
+
+    100% {
+        filter: blur(0);
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid #fff;
+    white-space: nowrap;
+    width: 0;
+    animation: typing 3s steps(20, end) forwards, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 12ch
+    }
+
+    /* adjust based on text length */
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white
+    }
+}
+
+.smoke {
+    animation: smokeEffect 3s ease-out forwards;
+}
+
+@keyframes smokeEffect {
+    0% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+        filter: blur(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(-100px) scale(1.5);
+        filter: blur(5px);
+    }
+}
+
+.shatter {
+    animation: shatterEffect 1s ease-out forwards;
+}
+
+@keyframes shatterEffect {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+        filter: none;
+    }
+
+    100% {
+        transform: rotate(180deg) scale(0.2) translateY(-100px);
+        opacity: 0;
+        filter: blur(3px);
+    }
+}
+
+.particles::before,
+.particles::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: white;
+    animation: particleSpread 1s ease-out forwards;
+}
+
+.particles::after {
+    left: 50%;
+    top: 50%;
+}
+
+@keyframes particleSpread {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-80px, -80px) scale(2);
+        opacity: 0;
+    }
+}
+
+.color-morph {
+    animation: colorMorph 3s ease-in-out infinite alternate;
+}
+
+@keyframes colorMorph {
+    0% {
+        color: #ff6ec4;
+        background: transparent;
+    }
+
+    50% {
+        color: #7873f5;
+        background: transparent;
+    }
+
+    100% {
+        color: #70e1f5;
+        background: transparent;
+    }
+}
