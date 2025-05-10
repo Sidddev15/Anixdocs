@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://Sidddev15.github.io/Anix",
+  "homepage": "https://Sidddev15.github.io/anixdocs",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
