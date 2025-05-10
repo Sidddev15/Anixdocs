@@ -7,7 +7,7 @@ import AnimationsGallery from "./pages/AnimationsGallery/AnimationsGallery";
 
 function App() {
 	return (
-		<Router basename="/Anix">
+		<Router basename="/">
 			<Routes>
 				<Route
 					path="/"
