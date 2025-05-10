@@ -8,7 +8,7 @@ import AnimationsGallery from "./pages/AnimationsGallery/AnimationsGallery";
 function App() {
 	return (
 		<Router>
-			<Routes basename="/anixdocs">
+			<Routes>
 				<Route
 					path="/"
 					element={<Hero />}
