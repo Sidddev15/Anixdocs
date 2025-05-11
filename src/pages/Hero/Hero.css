@@ -67,14 +67,16 @@
 .cta-button a {
     color: #fafafa;
     text-decoration: none;
-    line-height: 2.5rem ;
+    line-height: 2.5rem;
 }
 
 .cta-button::before {
     content: "";
     position: absolute;
-    top: 0; left: 0;
-    height: 100%; width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
     background: linear-gradient(45deg, rgba(255, 110, 196, 1), rgba(120, 115, 245, 1));
     opacity: 0;
     z-index: -1;
@@ -83,4 +85,43 @@
 
 .cta-button:hover::before {
     opacity: 1;
+}
+
+@media (orientation: portrait) {
+    .hero-container {
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        align-items: start;
+    }
+
+    .headline {
+        font-size: 2.3rem;
+        line-height: 3.375rem;
+    }
+
+    .headline-subtext-container {
+        width: 100%;
+    }
+
+    .subtext {
+        font-size: 1.1rem;
+    line-height: 1.175rem;
+    }
+
+    .cta-button-container {
+        display: flex;
+        column-gap: 0.6rem;
+        padding-top: 2.25rem;
+        flex-wrap: wrap;
+        justify-content: start;
+    }
+
+    .cta-button {
+        width: 7.6rem;
+        font-size: 0.9rem;
+    }
+
+    .animated-projections-container {
+        width: 100%;
+    }
 }

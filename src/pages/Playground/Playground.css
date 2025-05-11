@@ -308,3 +308,10 @@
         background: transparent;
     }
 }
+
+@media (orientation: portrait) {
+    .playground-container h3 {
+        font-size: 7rem;
+        line-height: 6rem;
+    }
+}

@@ -97,3 +97,13 @@
   a:hover {
     text-decoration: underline;
   }
+
+@media (orientation: portrait) {
+  .documentation-container {
+    padding: 1rem 0rem;
+  }
+
+  .documentation-container h4 {
+    font-size: 1.7rem;
+  }
+}
