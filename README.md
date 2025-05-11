@@ -1,12 +1,32 @@
-# React + Vite
+# AniX Docs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the official documentation site for [AniX](https://github.com/Sidddev15/Anix) — a minimal, developer-friendly animation library built for modern web interfaces.
 
-Currently, two official plugins are available:
+🔗 **Live Documentation**: [https://sidddev15.github.io/anixdocs/](https://sidddev15.github.io/anixdocs/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 About
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This repository hosts the interactive documentation and gallery for AniX. It's designed to help developers preview animations, explore categorized effects, and understand how to use AniX effectively in their own projects.
+
+> Whether you're a beginner looking to spice up your buttons or a seasoned dev needing consistent, reusable motion – AniX has you covered.
+
+---
+
+## 🧩 Features
+
+- 💡 Categorized animation demos (Slide, Fade, Morph, Text, etc.)
+- 📋 Copy-paste-ready class names
+- 📱 Mobile responsive UI
+- 🧪 Live animation preview for each class
+- 🔍 Smooth scrollable tab navigation
+- 🎨 Clean modern design with gradient touch
+
+---
+
+## 🛠️ Technologies Used
+
+- React (with functional components and hooks)
+- CSS (custom gradients and animations)
+- GitHub Pages for hosting
