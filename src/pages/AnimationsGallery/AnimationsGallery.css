@@ -54,24 +54,39 @@
 
 .animation-card {
   background: rgba(255, 255, 255, 0.06);
-  padding: 1.2rem;
-  width: 15rem;
-  border-radius: 0.8rem;
-  text-align: center;
-  box-shadow: 0 0 10px rgba(255, 110, 196, 0.1);
-  transition: transform 0.3s ease;
+    padding: 1.2rem;
+    width: 100%;
+    border-radius: 0.8rem;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 110, 196, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.animation-card h3 {
+  margin: 0;
 }
 
 .animation-card p {
-  max-width: 240px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  font-size: 1rem;
-  font-weight: 600;
-  font-family: var(--secondary-font);
+      display: flex;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: var(--secondary-font);
+    align-items: baseline;
+    column-gap: 5px;
+    margin: 0;
 }
 
+.animation-card p code {
+      font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--secondary-font);
+    border-bottom:1px solid rgba(255, 110, 196, 1);
+    font-weight: 600;
+}
 .anim-box {
   font-size: 1.2rem;
   height: 100px;
@@ -139,6 +154,8 @@
 
   .animation-card p {
     max-width: 100%;
+    text-align: left;
+    flex-direction: column;
   }
 
   .anim-box {

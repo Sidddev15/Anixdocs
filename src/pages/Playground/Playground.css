@@ -27,9 +27,9 @@
     background-color: transparent;
 }
 
-.playground-container h3:hover {
+/* .playground-container h3:hover {
     filter: drop-shadow(0 0 10px rgba(255, 110, 196, 0.7)) drop-shadow(0 0 20px rgba(120, 115, 245, 0.5));
-}
+} */
 
 .playground-container h6 {
     margin: 0;
